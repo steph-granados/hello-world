@@ -7,88 +7,95 @@
     <style>
         body {
             background-color: rgb(253, 202, 193);
-            margin-left: 60px;
-
-
+            margin-left: 5%; /* Set a small left margin as a starting point */
         }
-        h1{
+
+        h1 {
             font-size: 60px;
             background-color: rgb(253, 202, 193);
             color: rgb(216, 93, 72);
-            text-align:left;
-            
-            
+            text-align: left;
         }
 
-        h2{
+        h2 {
             color: rgb(126, 46, 32);
-            text-align:left;
+            text-align: left;
             font-size: 15px;
-
         }
-        h3{
+
+        h3 {
             color: rgb(55, 180, 164);
-            text-align:left;
+            text-align: left;
             font-size: 30px;
-
         }
-        h4{
+
+        h4 {
             color: rgb(55, 180, 164);
-            text-align:right;
+            text-align: right;
             font-size: 30px;
-
         }
 
-        p{
+        p {
             color: rgb(255, 255, 255);
-            text-align:left;
+            text-align: left;
             font-family: Arial, Helvetica, sans-serif;
-            
-        }
-        
-        #highlight{
-          color:  rgb(216, 93, 72);
-          font-size: 20px;
-          font-weight:bold;
-
+            white-space: nowrap; /* Prevent text from wrapping to the next line */
+            margin-left: 5%; /* Set a small left margin as a starting point */
         }
 
-    
-        
-        #highlight2{
-          color:  rgb(37, 116, 105);
-          font-size: 25px;
-          
-
+        #highlight {
+            color: rgb(216, 93, 72);
+            font-size: 20px;
+            font-weight: bold;
         }
-         
+
+        img {
+            max-width: 100%;
+            width: 100%;
+        }
+
+        #highlight2 {
+            color: rgb(37, 116, 105);
+            font-size: 25px;
+        }
+
+        /* Media query for larger screens */
+        @media (min-width: 600px) {
+            body {
+                margin-left: 10%; /* Increase left margin as the window gets wider */
+            }
+
+            p {
+                margin-left: 5%; /* Reset the margin for smaller screens */
+            }
+        }
     </style>
 </head>
 <body>
-  <h1 style="font-family: Arial;">Hello World!</h1>
-  <h2 style="font-family: Arial;">My name is Stephanie and I'm...</h1>
-  <h3 style="font-family: Arial;">Just another lefty...</h2>
-  <h4 style="font-family: Arial;">...in a right handed world</h2>
- 
+<h1 style="font-family: Arial;">Hello World!</h1>
+<h2 style="font-family: Arial;">My name is Stephanie and I'm...</h1>
+<h3 style="font-family: Arial;">Just another lefty...</h2>
+<h4 style="font-family: Arial;">...in a right-handed world</h2>
+
 <p>Spanish: <span id="highlight">Zurdo(a)</span> [thoor-doh] (or Mano izquierda [ma-noh eez-k'ee-ay'-dah])</p>
-<p style="margin-left: 20px;" >French: <span id="highlight"> Gaucher</span> [goh-shay]</p>
-<p style="margin-left: 40px;">German: <span id="highlight">Linkshänder</span> [link-shend-uh]</p>
-<p style="margin-left: 60px;">Italian: <span id="highlight">Mancino</span> [man-chee-noh]</p>
-<p style="margin-left: 80px;">Portuguese: <span id="highlight">Canhoto</span> [kahn-oh-toh]</p>
-<p style="margin-left: 100px;">Dutch: <span id="highlight">Linkshandig</span> [linkshahn-dikh]</p>
-<p style="margin-left: 120px;">Russian: <span id="highlight">Левша</span> (Levsha) [lyev-shah]</p>
-<p style="margin-left: 140px;">Japanese: <span id="highlight"> (Hidarikiki)</span> [hee-dah-ree-kee-kee]</p>
-<p style="margin-left: 160px;">Chinese (Simplified): <span id="highlight">左撇子</span> (Zuǒpiězi) [zoo-pee-yuh-tzuh]</p>
-<p style="margin-left: 180px;">Korean: <span id="highlight">왼손잡이</span> (Wonsŏnjabi) [wuhn-son-jah-bee]</p>
-<p style="margin-left: 200px;">Arabic: <span id="highlight">أيسر</span> (Aysar)[ay-sar]</p>
-<p style="margin-left: 220px;">Turkish: <span id="highlight">Solak</span> [soh-lahk]</p>
-<p style="margin-left: 240px;">Hindi: <span id="highlight">बाईं हाथ </span>(Baayen Haath) [bah-een hah-th]</p>
-<p style="margin-left: 260px;">Swahili: <span id="highlight">Kushoto</span> [koo-shoh-toh]</p>
-<p style="margin-left: 280px;">Greek: <span id="highlight">Αριστερόχειρος</span> (Aristerócheiros) [a-ree-ste-ro-khe-rohs]</p>
-<p style="margin-left: 300px;">Hebrew: <span id="highlight">שמאלי </span> (Shmali) [sh-mah-lee]</p>
-<p style="margin-left: 320px;">Vietnamese: <span id="highlight">Thuận</span> tay trái [thoo-ahn tai trai]</p>
-<p style="margin-left: 340px;">Swedish: <span id="highlight">Vänsterhänt</span> [vens-ter-hent]</p>
-<p style="margin-left: 360px;">Finnish: <span id="highlight">Vasenkätinen</span> [vah-sen-kaa-tee-nen]</p>
+<p style="margin-left: 10%;">French: <span id="highlight"> Gaucher</span> [goh-shay]</p>
+<p style="margin-left: 15%;">German: <span id="highlight">Linkshänder</span> [link-shend-uh]</p>
+<p style="margin-left: 20%;">Italian: <span id="highlight">Mancino</span> [man-chee-noh]</p>
+<p style="margin-left: 25%;">Portuguese: <span id="highlight">Canhoto</span> [kahn-oh-toh]</p>
+<p style="margin-left: 30%;">Dutch: <span id="highlight">Linkshandig</span> [linkshahn-dikh]</p>
+<p style="margin-left: 35%;">Russian: <span id="highlight">Левша</span> (Levsha) [lyev-shah]</p>
+<p style="margin-left: 40%;">Japanese: <span id="highlight"> (Hidarikiki)</span> [hee-dah-ree-kee-kee]</p>
+<p style="margin-left: 45%;">Chinese (Simplified): <span id="highlight">左撇子</span> (Zuǒpiězi) [zoo-pee-yuh-tzuh]</p>
+<p style="margin-left: 50%;">Korean: <span id="highlight">왼손잡이</span> (Wonsŏnjabi) [wuhn-son-jah-bee]</p>
+<p style="margin-left: 55%;">Arabic: <span id="highlight">أيسر</span> (Aysar)[ay-sar]</p>
+<p style="margin-left: 60%;">Turkish: <span id="highlight">Solak</span> [soh-lahk]</p>
+<p style="margin-left: 65%;">Hindi: <span id="highlight">बाईं हाथ </span>(Baayen Haath) [bah-een hah-th]</p>
+<p style="margin-left: 70%;">Swahili: <span id="highlight">Kushoto</span> [koo-shoh-toh]</p>
+<p style="margin-left: 75%;">Greek: <span id="highlight">Αριστερόχειρος</span> [a-ree-ste-ro-khe-rohs]</p>
+<p style="margin-left: 80%;">Hebrew: <span id="highlight">שמאלי </span> (Shmali) [sh-mah-lee]</p>
+<p style="margin-left: 85%;">Vietnamese: <span id="highlight">Thuận</span> tay trái [thoo-ahn tai trai]</p>
+<p style="margin-left: 90%;">Swedish: <span id="highlight">Vänsterhänt</span> [vens-ter-hent]</p>
+<p style="margin-left: 95%;">Finnish: <span id="highlight">Vasenkätinen</span> [vah-sen-kaa-tee-nen]</p>
 
 <p>
     <a 
@@ -98,3 +105,4 @@
    <img src="Images/obama-left-handed.jpg";
 
 </html>
+
